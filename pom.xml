@@ -72,6 +72,8 @@
             </executions>
             <configuration>
                <excludes>
+                   <exclude>.attach*</exclude>
+                   <exclude>.git</exclude>
                    <exclude>.git/**/*</exclude>
                    <exclude>.idea/**/*</exclude>
                    <exclude>src/site/monitoring-visualvm-jms-dump-open-resources-result.log</exclude>
@@ -91,6 +93,7 @@
                </execution>
             </executions>
          </plugin>
+         <!--
          <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-checkstyle-plugin</artifactId>
@@ -108,6 +111,7 @@
                </execution>
             </executions>
          </plugin>
+         -->
           <plugin>
               <groupId>com.github.github</groupId>
               <artifactId>site-maven-plugin</artifactId>
